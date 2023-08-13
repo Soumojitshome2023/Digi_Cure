@@ -1,0 +1,156 @@
+.myproflie_main_body {
+
+    /* border: 3px solid red; */
+    margin: 100px 0;
+
+}
+
+.myproflie_main_body h1 {
+
+    /* border: 3px solid red; */
+    text-align: center;
+    color: purple;
+
+}
+
+.myprofile_main_card {
+    /* border: 3px solid rgb(47, 0, 255); */
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 2px red;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.myprofile_main_card:hover {
+    box-shadow: 0 0 8px 2px rgb(132, 0, 255);
+
+}
+
+.myprofile_pic_card {
+    /* border: 3px solid purple; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+}
+.myprofile_pic_card p{
+    padding: 10px;
+}
+
+.myprofile_pic_card img {
+    /* border: 3px solid green; */
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px red;
+}
+.myprofile_pic_card img:hover{
+    box-shadow: 0 0 8px 2px rgb(173, 4, 246);
+
+}
+
+.myprofile_right_sec {
+
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.myprofile_right_sec h1 {
+
+    color: black;
+    font-size: 25px;
+}
+
+.myprofile_details {
+    /* border: 3px solid yellow; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.myprofile_details ul {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.myprofile_details ul li {
+    margin: 10px;
+
+}
+
+.myproflie_btns {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.myproflie_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    margin: 5px;
+}
+
+.myproflie_button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.myproflie_button svg path {
+    transition: 400ms;
+}
+
+.myproflie_button:hover {
+    background-color: transparent;
+}
+.mypfeedback_btn{
+    color: white;
+}
+
+.myproflie_button:hover .text {
+    color: #181717;
+    
+}
+
+.myproflie_button:hover svg path {
+    fill: #181717;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .myprofile_main_card {
+        /* box-shadow: none; */
+        border-radius: 0;
+    }
+
+
+}

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home_main {
+    /* border: 3px solid blue; */
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+#left_sec {
+    /* border: 3px solid red; */
+    height: fit-content;
+    width: 45vw;
+    /* height: 80vh; */
+    margin: 5px;
+}
+
+#right_sec {
+    /* border: 3px solid red; */
+    height: fit-content;
+    width: 45vw;
+    /* height: 80vh; */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right_sec img {
+
+    /* border: 3px solid red; */
+    width: 45vw;
+    margin: 5px;
+}
+
+
+#home_heading {
+    /* border: 3px solid blue; */
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#home_heading span {
+    color: orangered;
+}
+
+#home_desc {
+    /* border: 3px solid blue; */
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 20px;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+    box-shadow: 0 0 3px 3px rgb(187, 70, 255);
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button:active {
+    box-shadow: 0 0 10px 3px rgb(255, 125, 125);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,
+            rgba(150, 93, 233, 1) 10.8%,
+            rgba(99, 88, 238, 1) 94.3%);
+    transition: all 0.475s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff5555;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #home_main {
+
+        flex-direction: column-reverse;
+        /* margin-top: 70px; */
+        padding-top: 70px;
+    }
+
+    #right_sec {
+        width: 98vw;
+    }
+
+    #left_sec {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home_heading {
+        font-size: 30px;
+    }
+
+    #right_sec img {
+        width: 97vw;
+    }
+
+}

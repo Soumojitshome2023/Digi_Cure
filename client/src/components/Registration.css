@@ -1,0 +1,299 @@
+/* RegistrationForm.css */
+
+#reg_main {
+  /* border: 3px solid red; */
+  padding: 10px;
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  
+  
+}
+
+#img_success p {
+  /* border: 3px solid red; */
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+  text-align: center;
+  color: rgb(77, 0, 77);
+}
+
+#reg_left_sec {
+  /* border: 3px solid red; */
+  padding: 20px;
+  width: 45vw;
+
+}
+
+#reg_right_sec {
+  /* border: 3px solid red; */
+  padding: 20px;
+  width: 45vw;
+}
+
+#reg_left_sec img {
+  width: 42vw;
+}
+
+
+.registration-form-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px 2px rgb(204, 0, 255);
+  border-radius: 8px;
+  background-color: #fff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* margin-top: 100px; */
+  /* border: 3px solid red; */
+}
+
+.registration-form-container h1 {
+  color: rgb(77, 0, 77);
+  text-align: center;
+}
+
+.registration-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .registration-form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+} */
+
+/* .registration-form-container input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+/* .registration-form-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+.reg_input {
+  color: #000000;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* margin: 10px; */
+}
+
+.reg_input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.reg_input:focus {
+  outline: none;
+}
+
+.reg_input:focus+.reg_input-border {
+  width: 100%;
+}
+
+.form-control {
+  position: relative;
+  --width-of-input: 300px;
+  margin: 10px;
+}
+
+.reg_input-alt {
+  font-size: 1.2rem;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reg_input-border-alt {
+  height: 3px;
+  background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+}
+
+.reg_input-alt:focus+.reg_input-border-alt {
+  width: 100%;
+}
+
+
+
+.input-div {
+  align-self: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 100px rgb(255, 0, 0), inset 0px 0px 10px rgb(255, 0, 0), 0px 0px 5px rgb(255, 255, 255);
+  animation: flicker 2s linear infinite;
+}
+
+.icon {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+  animation: iconflicker 2s linear infinite;
+}
+
+#input_file_label {
+  /* border: 3px solid green; */
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 1px rgb(255, 0, 0);
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#input_file_label:active {
+  box-shadow: 0 0 8px 2px rgb(0, 81, 255);
+
+}
+
+#input_file_label:hover {
+  box-shadow: 0 0 8px 2px rgb(204, 0, 255);
+
+}
+
+.input-file {
+  position: absolute;
+  /* opacity: 0; */
+  display: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
+}
+
+.file_upload_sec {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.file_upload_sec span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@keyframes flicker {
+  0% {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 100px rgb(255, 0, 0), inset 0px 0px 10px rgb(255, 0, 0), 0px 0px 5px rgb(255, 255, 255);
+  }
+
+  5% {
+    border: none;
+    box-shadow: none;
+  }
+
+  10% {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 100px rgb(255, 0, 0), inset 0px 0px 10px rgb(255, 0, 0), 0px 0px 5px rgb(255, 255, 255);
+  }
+
+  25% {
+    border: none;
+    box-shadow: none;
+  }
+
+  30% {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 100px rgb(255, 0, 0), inset 0px 0px 10px rgb(255, 0, 0), 0px 0px 5px rgb(255, 255, 255);
+  }
+
+  100% {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 100px rgb(255, 0, 0), inset 0px 0px 10px rgb(255, 0, 0), 0px 0px 5px rgb(255, 255, 255);
+  }
+}
+
+@keyframes iconflicker {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0.2;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  #reg_main {
+    flex-direction: column;
+    padding: 0px;
+
+  }
+
+  #reg_right_sec,
+  #reg_left_sec {
+    margin: 0;
+    /* width: 90vw; */
+    width: fit-content;
+    padding: 5px;
+  }
+
+  #reg_left_sec img {
+    width: 88vw;
+  }
+
+  .registration-form-container {
+    width: 96vw;
+    margin: 0;
+  }
+
+}
